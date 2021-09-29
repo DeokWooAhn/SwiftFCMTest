@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570119626B40CB82661F7E6C /* Pods_FCM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EF0FE255912BDD8CE5C737 /* Pods_FCM.framework */; };
 		6DFEA67D26FC4E5B007F52A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFEA67C26FC4E5B007F52A7 /* AppDelegate.swift */; };
 		6DFEA67F26FC4E5B007F52A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFEA67E26FC4E5B007F52A7 /* SceneDelegate.swift */; };
 		6DFEA68126FC4E5B007F52A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFEA68026FC4E5B007F52A7 /* ContentView.swift */; };
 		6DFEA68326FC4E5C007F52A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFEA68226FC4E5C007F52A7 /* Assets.xcassets */; };
 		6DFEA68626FC4E5C007F52A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFEA68526FC4E5C007F52A7 /* Preview Assets.xcassets */; };
 		6DFEA68926FC4E5C007F52A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFEA68726FC4E5C007F52A7 /* LaunchScreen.storyboard */; };
+		6DFEA69426FC85C7007F52A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DFEA69326FC85C7007F52A7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,11 @@
 		6DFEA68526FC4E5C007F52A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6DFEA68826FC4E5C007F52A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DFEA68A26FC4E5C007F52A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DFEA69226FC76DA007F52A7 /* FCM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FCM.entitlements; sourceTree = "<group>"; };
+		6DFEA69326FC85C7007F52A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		85F883280910E9E509B4C92B /* Pods-FCM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCM.release.xcconfig"; path = "Target Support Files/Pods-FCM/Pods-FCM.release.xcconfig"; sourceTree = "<group>"; };
+		88EC6C94B16BF0111D3711B0 /* Pods-FCM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCM.debug.xcconfig"; path = "Target Support Files/Pods-FCM/Pods-FCM.debug.xcconfig"; sourceTree = "<group>"; };
+		D8EF0FE255912BDD8CE5C737 /* Pods_FCM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +38,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				570119626B40CB82661F7E6C /* Pods_FCM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12C726C4C44795F721868BA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88EC6C94B16BF0111D3711B0 /* Pods-FCM.debug.xcconfig */,
+				85F883280910E9E509B4C92B /* Pods-FCM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6DFEA67026FC4E5B007F52A7 = {
 			isa = PBXGroup;
 			children = (
 				6DFEA67B26FC4E5B007F52A7 /* FCM */,
 				6DFEA67A26FC4E5B007F52A7 /* Products */,
+				12C726C4C44795F721868BA5 /* Pods */,
+				89B26124407ED35CB1D5486F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +75,14 @@
 		6DFEA67B26FC4E5B007F52A7 /* FCM */ = {
 			isa = PBXGroup;
 			children = (
+				6DFEA69226FC76DA007F52A7 /* FCM.entitlements */,
 				6DFEA67C26FC4E5B007F52A7 /* AppDelegate.swift */,
 				6DFEA67E26FC4E5B007F52A7 /* SceneDelegate.swift */,
 				6DFEA68026FC4E5B007F52A7 /* ContentView.swift */,
 				6DFEA68226FC4E5C007F52A7 /* Assets.xcassets */,
 				6DFEA68726FC4E5C007F52A7 /* LaunchScreen.storyboard */,
 				6DFEA68A26FC4E5C007F52A7 /* Info.plist */,
+				6DFEA69326FC85C7007F52A7 /* GoogleService-Info.plist */,
 				6DFEA68426FC4E5C007F52A7 /* Preview Content */,
 			);
 			path = FCM;
@@ -75,6 +96,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		89B26124407ED35CB1D5486F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8EF0FE255912BDD8CE5C737 /* Pods_FCM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DFEA68D26FC4E5C007F52A7 /* Build configuration list for PBXNativeTarget "FCM" */;
 			buildPhases = (
+				14B4B68E44765AECED842705 /* [CP] Check Pods Manifest.lock */,
 				6DFEA67526FC4E5B007F52A7 /* Sources */,
 				6DFEA67626FC4E5B007F52A7 /* Frameworks */,
 				6DFEA67726FC4E5B007F52A7 /* Resources */,
+				168A411390B1B7A9EF04B4B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +164,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DFEA68926FC4E5C007F52A7 /* LaunchScreen.storyboard in Resources */,
+				6DFEA69426FC85C7007F52A7 /* GoogleService-Info.plist in Resources */,
 				6DFEA68626FC4E5C007F52A7 /* Preview Assets.xcassets in Resources */,
 				6DFEA68326FC4E5C007F52A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14B4B68E44765AECED842705 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FCM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		168A411390B1B7A9EF04B4B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FCM/Pods-FCM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FCM/Pods-FCM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FCM/Pods-FCM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DFEA67526FC4E5B007F52A7 /* Sources */ = {
@@ -283,18 +357,21 @@
 		};
 		6DFEA68E26FC4E5C007F52A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88EC6C94B16BF0111D3711B0 /* Pods-FCM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FCM/FCM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FCM/Preview Content\"";
+				DEVELOPMENT_TEAM = S67GD4399F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FCM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.FCM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FCMReborn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,18 +380,21 @@
 		};
 		6DFEA68F26FC4E5C007F52A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85F883280910E9E509B4C92B /* Pods-FCM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FCM/FCM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FCM/Preview Content\"";
+				DEVELOPMENT_TEAM = S67GD4399F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FCM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.FCM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FCMReborn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
